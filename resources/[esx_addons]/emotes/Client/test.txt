@@ -1,0 +1,52 @@
+["dab"] = {"default@dance@dictionary", "default_dance", "Dab", AnimationOptions =
+   {
+       EmoteLoop = true,
+   }},
+   ["orange"] = {"default@dance@dictionary1", "default_dance", "Justice", AnimationOptions =
+   {
+       EmoteLoop = true,
+   }},
+   ["sheesh"] = {"default@dance@dictionary2", "default_dance", "Sheesh", AnimationOptions =
+   {
+       EmoteLoop = true,
+   }},
+   ["custom1"] = {"default@dance@crossbounce", "default_dance", "Custom 1", AnimationOptions =
+   {
+       EmoteLoop = true,
+   }},
+   ["custom2"] = {"default@dance@dont_start", "default_dance", "Custom 2", AnimationOptions =
+   {
+       EmoteLoop = true,
+   }},
+   ["custom3"] = {"default@dance@floss", "default_dance", "Custom 3", AnimationOptions =
+   {
+       EmoteLoop = true,
+   }},
+   ["custom4"] = {"default@dance@orangejustice", "default_dance", "Custom 4", AnimationOptions =
+   {
+       EmoteLoop = true,
+   }},
+   ["custom5"] = {"default@dance@renegade", "default_dance", "Custom 5", AnimationOptions =
+   {
+       EmoteLoop = true,
+   }},
+   ["custom6"] = {"default@dance@rickroll", "default_dance", "Custom 6", AnimationOptions =
+   {
+       EmoteLoop = true,
+   }},
+   ["custom7"] = {"default@dance@savage", "default_dance", "Custom 7", AnimationOptions =
+   {
+       EmoteLoop = true,
+   }},
+   ["custom8"] = {"default@dance@sayso", "default_dance", "Custom 8", AnimationOptions =
+   {
+       EmoteLoop = true,
+   }},
+   ["custom8"] = {"default@dance@take_l", "default_dance", "Custom 9", AnimationOptions =
+   {
+       EmoteLoop = true,
+   }},
+   ["custom10"] = {"default@dance@toosie_slide", "default_dance", "Custom 10", AnimationOptions =
+   {
+       EmoteLoop = true,
+   }},
