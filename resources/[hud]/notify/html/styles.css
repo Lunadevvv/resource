@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+body {
+    margin-top: 100px;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    color: white;
+}
+
+.toast {
+    position: relative;
+    width: 100px;
+    float: right;
+    top: 100px;
+    left: 30px;
+}
+
+.wrapper {
+    width: 100px;
+    height: auto;
+    background-color: #2C394B;
+    float: right;
+}
+
+.main {
+    margin: 12px 16px 12px 56px;
+    position: relative;
+}
+
+.main::before {
+    font-size: 24px;
+    top: calc(50% - 12px);
+    left: -40px;
+    line-height: 24px;
+    position: absolute;
+}
+
+.success-icon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f058";
+    color: #47cf73;
+}
+
+.success {
+    background-color: rgb(46, 46, 46, 0.7);
+    padding: 5px 5px 5px 5px;
+    border-bottom: 4px solid #FFE61B;
+}
+
+.info-icon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f05a";
+    color: #2f83ff;
+}
+
+.info {
+    background-color: rgb(46, 46, 46, 0.7);
+    padding: 5px 5px 5px 5px;
+    border-bottom: 4px solid #FFE61B;
+}
+
+.warning-icon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f071";
+    color: #ffc107;
+}
+
+.warning {
+    background-color: rgb(46, 46, 46, 0.7);
+    padding: 5px 5px 5px 5px;
+    border-bottom: 4px solid #FFE61B;
+}
+
+.error-icon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f06a";
+    color: #dc3545;
+}
+
+.error {
+    background-color: rgb(46, 46, 46, 0.7);
+    padding: 5px 5px 5px 5px;
+    border-bottom: 4px solid #FFE61B;
+}
+
+.phonemessage-icon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f7cd";
+    color: #f38847;
+}
+
+.phonemessage {
+    background-color: rgb(46, 46, 46, 0.7);
+    padding: 5px 5px 5px 5px;
+    border-bottom: 4px solid #FFE61B;
+}
+
+.neutral-icon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f11c";
+    color: #6c757d;
+}
+
+.neutral {
+    background-color: rgb(46, 46, 46, 0.7);
+    padding: 5px 5px 5px 5px;
+    border-bottom: 4px solid #FFE61B;
+}

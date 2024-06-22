@@ -1,0 +1,73 @@
+-- ESX = nil
+
+-- TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+-- local themluot = 'https://discord.com/api/webhooks/1017326537378373653/4QlxGBlFcyzQVo9th2Blx1StFMbD-vtNAFCE434li56TnydWwfpjYHgEjb-a_bAcKL8t'
+-- RegisterServerEvent('esx_contract:sellVehicle')
+-- AddEventHandler('esx_contract:sellVehicle', function(target, plate, args)
+-- 	local _source = source
+-- 	local xPlayer = ESX.GetPlayerFromId(_source)
+-- 	local _target = target
+-- 	local tPlayer = ESX.GetPlayerFromId(_target)
+-- 	local result = MySQL.Sync.fetchAll('SELECT * FROM owned_vehicles WHERE owner = @identifier AND plate = @plate', {
+-- 			['@identifier'] = xPlayer.identifier,
+-- 			['@plate'] = plate
+-- 		})
+-- 	if xPlayer.getIdentifier() ~= tPlayer.getIdentifier() then
+-- 		if result[1].soluong ~= nil and result[1].soluong > 0 then
+-- 			if result[1] ~= nil then
+-- 				MySQL.Async.execute('UPDATE owned_vehicles SET owner = @target, soluong = soluong - 1 WHERE owner = @owner AND plate = @plate', {
+-- 					['@owner'] = xPlayer.identifier,
+-- 					['@plate'] = plate,
+-- 					['@target'] = tPlayer.identifier
+-- 				}, function (rowsChanged)
+-- 					if rowsChanged ~= 0 then
+-- 						TriggerClientEvent('esx_contract:showAnim', _source)
+-- 						Wait(22000)
+-- 						TriggerClientEvent('esx_contract:showAnim', _target)
+-- 						Wait(22000)
+-- 						TriggerClientEvent('notify:Alert', _source, 'Bán xe', "Bạn đã bán chiếc xe với số đăng ký <span style='color:#47cf73'>" .. plate .. "</span>", 7000, 'success')
+-- 						TriggerClientEvent('notify:Alert', _target, 'Mua xe', "Bạn đã mua chiếc xe với số đăng ký <span style='color:#47cf73'>" .. plate .. "</span>", 7000, 'success')
+-- 						xPlayer.removeInventoryItem('contract', 1)
+						
+-- 						TriggerEvent('luna_log', themluot, 'Thêm lượt', GetPlayerName(_source)..' đã bán xe '.. plate .. ' cho ' .. GetPlayerName(_target))
+-- 					end
+-- 				end)
+-- 			else
+-- 				TriggerClientEvent('notify:Alert', _source, 'Bán xe', "Đây không phải là xe của bạn", 7000, 'error')
+-- 			end
+-- 		else
+-- 			TriggerClientEvent('notify:Alert', _source, 'Bán xe', "Bạn đã hết lượt chuyển xe này", 7000, 'error')
+-- 		end
+-- 	end
+-- end)
+
+-- RegisterNetEvent('contract:server:themluot', function(plate)
+--     local _source = source
+-- 	local xPlayer = ESX.GetPlayerFromId(_source)
+-- 	MySQL.Async.execute('UPDATE owned_vehicles SET soluong = soluong + 1 WHERE owner = @owner AND plate = @plate', {
+--         ['@owner'] = xPlayer.identifier,
+--         ['@plate'] = plate
+--     }, function(rowsChanged)
+--         if rowsChanged ~= 0 then
+--             xPlayer.removeInventoryItem('tangluotchuyen', 1)
+-- 			TriggerClientEvent('notify:Alert', _source, 'Thêm lượt chuyển', "Bạn đã tăng 1 lượt chuyển thành công cho phương tiện <span style='color:#47cf73'>" .. plate .. "</span>", 7000, 'success')
+-- 			TriggerEvent('luna_log', themluot, 'Thêm lượt', GetPlayerName(_source)..' đã thêm 1 lượt chuyển cho xe '.. plate)
+--         end
+--     end)
+-- end)
+
+-- ESX.RegisterUsableItem('contract', function(source)
+-- 	local _source = source
+-- 	local xPlayer = ESX.GetPlayerFromId(_source)
+-- 	TriggerClientEvent('esx_contract:getVehicle', _source)
+-- end)
+
+-- ESX.RegisterUsableItem('tangluotchuyen', function(source)
+-- 	local _source = source
+-- 	local xPlayer = ESX.GetPlayerFromId(_source)
+--     TriggerClientEvent('contract:themluot', _source)
+-- 	-- MySQL.Async.execute('UPDATE owned_vehicles SET soluong = soluong + 1 WHERE owner = @owner AND plate = @plate', {
+--     --     ['@owner'] = xPlayer.identifier,
+--     --     ['@plate'] = plate
+--     -- })
+-- end)

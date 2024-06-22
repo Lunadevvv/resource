@@ -1,0 +1,19 @@
+Locales['en'] = {
+  ['cloakroom']	= 'Phòng thay đồ',
+  ['job_wear'] = 'Đồ công việc',
+  ['citizen_wear'] = 'Đồ thường',
+  ['vehiclespawner'] = 'Chọn xe làm việc', 
+  ['already_have_truck'] = 'Chúng tôi đã cấp cho bạn 1 chiếc xe!', 
+  ['collection'] = 'Nhấn ~r~[E]~w~ để ~b~Pickup.',
+  ['return_depot'] = 'trở về kho.',
+  ['blip_job'] = 'Nơi nhận việc Hốt Rác', --'Garbage company',
+  ['blip_delivery'] = 'Hốt Rác : Điếm đến', --'Garbage company : Delivery',
+  ['blip_goal'] = 'ABC Hốt Rác: Điểm trở lại', --'Garbage company : Delivery point',
+  ['cancel_mission'] = 'Nhấn ~r~[E]~w~ để Kết thúc công việc',
+  ['collect_bags'] = 'Nhấn ~r~[E]~w~ để lấy rác ~b~(%s bịch)',
+  ['not_near_truck'] = 'không có xe tải gần đó để gửi túi vào.',
+  ['need_work_truck'] = 'bạn phải ở trong xe tải của công ty để bắt đầu thu.',
+  ['toss_bag'] = 'Nhấn ~r~[E]~w~ để place bag in truck.',
+  ['drive_to_collection'] = 'lái xe đến địa điểm đón.',
+  ['no_trash_aviable'] = 'Không có thùng rác để lấy tại vị trí này.'
+}
